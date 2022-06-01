@@ -1,6 +1,6 @@
 %geschwindigkeit in feststoffen
 
-laengen = [1.49,1.5,1.51];
+length = [1.500,1.497,1.023];
 alleMetallZeiten = {[874,1758,2630, 3510, 4381];%Messing
 [782, 1565, 2339, 3122, 3901];%Kupfer
 [598, 1191, 1790, 2380, 2984]};%Alu
