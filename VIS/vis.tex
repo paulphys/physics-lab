@@ -115,11 +115,13 @@ als Ausdruck für die Viskosität der Flüssigkeit. Will man die Viskosität mit
 \caption{Versuchsaufbau Kugelfallviskosimeter \cite{1}}
 \label{fig:length_eight_mouse}
 \end{figure}
-Das Kugelfallviskosimeter (Abbildung 1) ist eine besondere Bauform eines Viskosimeters und dient der präzisen Messung der Viskosität durchsichtiger newtonscher Flüssigkeiten. Es besteht aus einem zylindrischen Behälter, welcher mit einem Glyzerin-Wasser Gemisch gefüllt ist. Für den Versuch werden zunächst die Massen und Durchmesser zehn kleiner, gleich großer Kugeln bestimmt. Diese lässt man anschließend nacheinander durch den Einwurftrichter im Glyzerin-Wasser Gemisch innerhalb des Viskosimeters nach unten sinken. Währenddessen stoppt man für jede der Kugeln die Zeit, die diese benötigen, um die in der Abbildung markierte Strecke innerhalb des Fallrohres zurückzulegen.
+Das Kugelfallviskosimeter (Abbildung 3) ist eine besondere Bauform eines Viskosimeters und dient der präzisen Messung der Viskosität durchsichtiger newtonscher Flüssigkeiten. Es besteht aus einem zylindrischen Behälter, welcher in unserem Fall mit einem Glyzerin-Wasser Gemisch gefüllt ist. Für den Versuch werden zunächst die Massen und Durchmesser zehn kleiner, gleich großer Kugeln bestimmt. Diese lässt man anschließend nacheinander durch den Einwurftrichter im Glyzerin-Wasser Gemisch innerhalb des Viskosimeters nach unten sinken. Währenddessen stoppt man für jede der Kugeln die Zeit, die diese benötigen, um die in der Abbildung markierte Strecke innerhalb des Fallrohres zurückzulegen.
 Nun wird noch die Flüssigkeitsdichte mithilfe eines Aräometer bestimmt, sowie der Innenrohrradius des Kugelfallviskosimeters ausgemessen.
 \newpage
 \subsection{Auswertung}
-Mithilfe der Gleichungen 8 und 9 ergibt sich die unkorrigierte Viskosität des Glyzerin-Wasser Gemischs zu $\eta = 169 \pm 69$ mPa s und die korrigierte Variante zu $\eta_{korr} = 89 \pm 61$ mPa s. Eine detallierte Berechnung der involvierten Unsicherheiten ist im nächsten Abschnitt zu finden.
+Zunächst bestimmten wir die Masse der Kugel zu $m=0,2864$ g und den Kugelradius zu $r = 3,00 \pm 0,05$ mm.
+Wir maßen für die Flüssigkeitsdichte $\rho_{Fl} = 1,225 \pm 0,005 $ g/cm$^3$ und für den Innenradius des Rohres $R= 53,3 \pm 0,05$ mm.
+Daraufhin bestimmten wir die Sinkgeschwindigkeit der Kugel mit $\nu = \frac{h}{t} $, $h=37,5 \pm 0,125$ cm, $t=2,49 \pm 0,5$ s,  zu $\nu_{mittel} = 0,151 \pm 0,030 $ m/s. Mithilfe der Gleichungen 8 und 9 ergibt sich die unkorrigierte Viskosität des Glyzerin-Wasser Gemischs zu $\eta = 170 \pm 8 $ mPa s und die korrigierte Variante zu $\eta_{korr} = 150 \pm 7 $ mPa s. Eine detallierte Berechnung der involvierten Unsicherheiten ist im nächsten Abschnitt zu finden.
 Vergleicht man die ermittelten Werte für die korrigierte bzw. unkorrigierte Viskosität mit Abbildung 4, entsprechen die Daten einer Konzentration von ca. $87\%$ des Glyzerin-Wasser Gemischs bei einer Temperatur von $20\degree$C. Da unsere Messungen jedoch bei $23 \degree$C gemacht wurde, ist dies nicht unbedingt aussagekräftig über die Genauigkeit.
 \begin{figure}[H]
 \centering
@@ -128,11 +130,11 @@ Vergleicht man die ermittelten Werte für die korrigierte bzw. unkorrigierte Vis
 \label{fig:length_eight_mouse}
 \end{figure}
 \noindent
-Nun können wir mithilfe von Gleichung 2 die Reynoldszahl $R_e = 410 \pm 186$ ermitteln, wobei der unkorrigierte Wert für die Viskosität verwendet wurde. Da die Reynoldszahl deutlich unter 1160 liegt, handelt es sich hierbei um eine laminare Strömung. Die Unsicherheit für die Reynoldszahl wurde hier ebenfalls mithilfe der Gaußschen Fehlerfortpflanzung bestimmt.
+Nun können wir mithilfe von Gleichung 2 die Reynoldszahl $R_e = 7,4 \pm 1,5 $ ermitteln, wobei der korrigierte Wert für die Viskosität $\eta_{korr} = 150 \pm 7$ mPa s, für die charakterische Länge $L = 6,00 \pm 0,05$ mm der Kugeldurchmesser, $\nu_{mittel}= 0,151 \pm 0,030$ m/s und $\rho_{Fl} = 1,225 \pm 0,005 $ g/cm$^3$, verwendet wurde. Da wir das Stokessche Gesetz angewendet haben, sollte die Reynoldszahl theoretisch nicht größer als 1 werden. Dies ist jedoch bei unseren Berechnungen nicht der Fall, somit handelt es sich bei der Kugelumströmung vermutlich nicht um eine laminare Strömung, sondern eine turbulente Strömung mit nicht vernachlässigbaren Trägheitskräften im umströmenden Fluid. Die Unsicherheit für die Reynoldszahl wurde hier ebenfalls mithilfe der Gaußschen Fehlerfortpflanzung bestimmt.
 \subsection{Fehlerrechnung} 
 Gleichung 8 kann mit $v = \frac{h}{t}$ und $\rho_K = \frac{m}{\frac{4}{3} \pi r^3}$ zu
 \begin{equation}
-    \eta = \frac{2gr^2 \cdot t}{9h} \cdot \bigg(\frac{3m}{4\pi r^3} - \rho \bigg)
+    \eta = \frac{2gr^2 \cdot t}{9h} \cdot \bigg(\frac{3\textrm{m}}{4\pi r^3} - \rho \bigg)
 \end{equation}
 umgeschrieben werden. Dieser Ausdruck hängt insgesamt von fünf unterschiedlichen Parametern ab, deren
 Unsicherheiten im Folgenden einzeln diskutiert werden sollen. Um die Gaußsche Fehlerfortpflanzung mit
@@ -147,14 +149,14 @@ Die Unsicherheit in der Zeitmessung $u(t) = \sqrt{u_A(t)^2+ u_B(t)^2}$ setzt sic
 \paragraph{Fallstrecke h}
 Die Fallstrecke $h$, welche mit einem Meterstab bestimmt wurde, unterliegt zwei Unsicherheiten. Zunächst wäre da die Ungenauigkeit des Meterstabs $a+b \cdot L$, mit $a = 0,6$ mm, $b = 0,4$ mm/m und $L$ der auf den nächsten vollen Meter aufgerundeten, gemessenen Länge. Diese kommt zu $0,75$ mm. Des Weiteren muss die Ableseungenauigkeit berücksichtig werden, welche wir mit $0,1$ cm abschätzten. Insgesamt kommt man auf eine Unsicherheit der Fallstrecke $h$ von $u(h)=1,25$ mm. Es ergibt sich $ \frac{\delta \eta}{\delta h} = \frac{\eta}{h}$ mit dem Vorfaktor $A_h = -1$. 
 \paragraph{Masse m}
-Die Unsicherheit in der Messung der Masse $u(m) = \sqrt{u_{B1}(m)^2 + u_{B2}(m)^2}$ g setzt sich zusammen aus der Linearitäts- und Skalierungsunsicherheit der Waage zu $u_{B1}(m)= 0.0005$ g, sowie der Reproduzierbarkeit $u_{B2}(m)= 0.0002$ g. Insgesamt kommt man so auf eine Unsicherheit $u(m)=0,00054$ g. Es ergibt sich $\frac{\delta  \eta}{\delta m} = \frac{\rho_K}{\rho_K - \rho_{Fl}} \cdot \frac{\eta}{m}$ mit dem Vorfaktor $A_m = \frac{\rho_K}{\rho_k - \rho_{Fl}}$. 
+Die Unsicherheit in der Messung der Masse $u(m) = \sqrt{u_{B1}(m)^2 + u_{B2}(m)^2}$ g setzt sich zusammen aus der Linearitäts- und Skalierungsunsicherheit der Waage zu $u_{B1}(m)= 0.0005$ g, sowie der Reproduzierbarkeit $u_{B2}(m)= 0.0002$ g. Insgesamt kommt man so auf eine Unsicherheit $u(m)=0,00054$ g. Es ergibt sich $\frac{\delta  \eta}{\delta m} = \frac{\rho_K}{\rho_K - \rho_{Fl}} \cdot \frac{\eta}{m}$ mit dem Vorfaktor $A_m = \frac{\rho_K}{\rho_K - \rho_{Fl}}$. 
 \paragraph{Dichte der Flüssigkeit $\rho_{Fl}$}
-Das Messen mit dem Aräometer unterliegt zwei Unsicherheiten. Eine Typ-B Unsicherheit von $0,0001 \frac{\textrm{g}}{\textrm{cm}^3}$ \cite{6} und eine geschätzte Ableseungenauigkeit von $0,005 \frac{\textrm{g}}{\textrm{cm}^3}$. Es ergibt sich $\frac{\delta \eta}{\delta \rho_{Fl}} = \frac{\eta}{\rho_{Fl}}$ mit dem Vorfaktor $A_{\rho_{Fl}} = - \frac{\rho_{Fl}}{\rho_K - \rho_{Fl}}$. 
+Das Messen mit dem Aräometer unterliegt zwei Unsicherheiten. Eine Typ-B Unsicherheit von $0,0001 \frac{\textrm{g}}{\textrm{cm}^3}$ \cite{6} und eine geschätzte Ableseungenauigkeit von $0,005 \frac{\textrm{g}}{\textrm{cm}^3}$. Es ergibt sich $\frac{\delta \eta}{\delta \rho_{Fl}} = - \frac{\eta}{\rho_K - \rho_{Fl}}$ mit dem Vorfaktor $A_{\rho_{Fl}} = \frac{-1}{\rho_K - \rho_{Fl}}$. 
 \paragraph{Kugelradius r}
 Ähnlich wie bei der Fehlerrechnung zur Fallhöhe bestimmen wir die Messabweichung des Messschiebers zu $u(r)=0,05$ mm.
-Die Standardabweichung der gemessenen Kugelradien ergibt sich bei uns zu null, da alle gemessenen Werte miteinander übereinstimmen. Es ergibt sich $\frac{\delta \eta}{\delta r}=\frac{\eta}{r}$ mit Vorfaktor $A_{r} = (2-3 \cdot \frac{\rho_K}{\rho_K - \rho_{Fl}})$.
+Die Standardabweichung der gemessenen Kugelradien ergibt sich bei uns zu null, da alle gemessenen Werte miteinander übereinstimmen. Es ergibt sich $\frac{\delta \eta}{\delta r}=(2-3 \cdot \frac{\rho_K}{\rho_K - \rho_{Fl}}) \cdot \frac{\eta}{r}$.
 \paragraph{Viskosität $\eta$}
-Setzt man alle $u(x_i)$ und $A_i$ in Gleichung 11 ein, kann man nun die Unsicherheit der unkorrigierten Viskosität bestimmen. Um die Unsicherheit der korrigierten Viskosität zu bekommen, berücksichtigt man die neuen Terme aus Gleichung 9 oder um ein ungefähres Ergebnis für $u(\eta_{korr})$ zu bekommen, multipliziert man $u(\eta)$ mit dem Faktor $\frac{1}{1+2,4 \cdot \frac{r}{R}}$.
+Setzt man alle $u(x_i)$ und $A_i$ in Gleichung 11 ein, kann man nun die Unsicherheit der unkorrigierten Viskosität bestimmen. Um die Unsicherheit der korrigierten Viskosität zu bekommen, berücksichtigt man die neuen Terme aus Gleichung 9 oder um ein ungefähres Ergebnis für $u(\eta_{korr})$ zu bekommen, multipliziert man $u(\eta)$ mit dem Faktor $\frac{1}{1+2,4 \cdot \frac{r}{R}}$. Hierbei tragen die involvierten Fehler der Zeit- und Radiusmessung am meisten zur Gesamtunsicherheit bei.
 \section{Kapillarviskosimeter}
 \subsection{Versuchsaufbau}
 \begin{figure}[H]
@@ -172,20 +174,32 @@ p(h) = \rho \cdot g \cdot h
 bestimmen. Für die Temperatur von 23$ \degree $C wird eine Dichte von 997,54 $\frac{\textrm{kg}}{\textrm{m}^3}$ verwendet $\cite{8}$. Die Steigung der Ausgleichsgerade (Abbildung 6) entspricht dem Strömungswiderstand. Jeglicher Offset entlang der Druck-Achse hat keinerlei Auswirkungen.
 \begin{figure}[H]
 \centering
-\includegraphics[width=350pt]{DruckStrom.eps}
+\includegraphics[width=350pt]{DruckStrom-eps-converted-to.pdf}
 \caption{Druck bei verschiedenen Stromstärken in beiden Kanülen und zugehörige Ausgleichsgeraden}
 \label{fig:length_eight_mouse}
 \end{figure}
 \noindent
-Aus den Werten des Strömungswiderstandes von $134,74\cdot 10^9 \pm 1,81 \cdot 10^9 \   \frac{\textrm{Pa}\cdot \textrm{s}}{\textrm{m}^3}$ für Kanüle 1 und $371,90\cdot 10^9 \pm 8,33\cdot 10^9 \ \frac{\textrm{Pa}\cdot \textrm{s}}{\textrm{m}^3}$ für Kanüle 2 lässt sich mithilfe des Zusammenhangs
+Aus den Werten des Strömungswiderstandes von $(134,7 \pm 1,8) \cdot 10^9 \frac{\textrm{Pa}\cdot \textrm{s}}{\textrm{m}^3}$ für Kanüle 1 und $(371,9 \pm 8,3)\cdot 10^9 \ \frac{\textrm{Pa}\cdot \textrm{s}}{\textrm{m}^3}$ für Kanüle 2 lässt sich mithilfe des Zusammenhangs
 \begin{equation}
 \eta = \frac{W\cdot\pi\cdot r^4}{8\cdot l}
 \end{equation}
-ein Wert von $1,030 \pm 0,593 \ \textrm{mPa} \cdot \textrm{s}$ in Kanüle 1 und ein Wert von $0,498 \pm 0,315 \ \textrm{mPa} \cdot \textrm{s}$ für die Viskosität der Flüssigkeit bei $23 \degree$C bestimmen. Die hohe Unsicherheit kommt zu großem Teil dadurch zustande, dass der Radius, der mit einer Unsicherheit von etwa 10$\%$ geschätzt wird, mit der 4. Potenz in die Berechnung einfließt. Kleine Änderungen am Radius können große Änderungen am Endgültigen Wert bewirken. So müsste man den gemessenen Wert von 9,5 Sktl um nur 1,5 Sktl erhöhen, um dem Literaturwert von $0,960 \ \textrm{mPa}\cdot \textrm{s}$ \cite{9} bei 23$ \degree$C zu erhalten. Der Wert für Kanüle 1 liegt nah am Literaturwert.
+und den Werten aus Tabelle 1
+\begin{table}[!ht]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+            & Kanüle 1       & Kanüle 2       \\ \hline
+Innenradius & 14,0(1,5)Sktl $\widehat{=}$ 0,148(15)mm& 9,5(1,5)Sktl $\widehat{=}$ 0,148(15) mm\\ \hline
+Länge (vgl. 3.3, Länge der Kapillare)      & 24,75$\pm$0,95mm & 29,9$\pm$1,1mm \\ \hline
+\end{tabular}
+\caption{Maße der Kanülen}
+\label{tab:my-table}
+\end{table}
+ein Wert von $1,03 \pm 0,44 \ \textrm{mPa} \cdot \textrm{s}$ in Kanüle 1 und ein Wert von $0,50 \pm 0,32 \ \textrm{mPa} \cdot \textrm{s}$ für die Viskosität der Flüssigkeit bei $23 \degree$C bestimmen. Die hohe Unsicherheit kommt zu großem Teil dadurch zustande, dass der Radius, der mit einer Unsicherheit von etwa 10$\%$ geschätzt wird, mit der 4. Potenz in die Berechnung einfließt. Kleine Änderungen am Radius können große Änderungen am Endgültigen Wert bewirken. So müsste man den gemessenen Wert von 9,5 Sktl um nur 1,5 Sktl erhöhen, um dem Literaturwert von $0,960 \ \textrm{mPa}\cdot \textrm{s}$ \cite{9} bei 23$ \degree$C zu erhalten. Der Wert für Kanüle 1 liegt nah am Literaturwert.
 \subsection{Fehlerrechnung}
-Unsicherheiten für Zeit, Höhe und Masse wurden wie in Abschnitt 2.3 erläutert, berechnet. 
+Unsicherheiten für Zeit, Höhe und Masse wurden wie in Abschnitt 2.3 erläutert, berechnet.
 \paragraph{Dichte} Für den Literaturwert der Dichte \cite{8} wurde die letzte verwendete Stelle, also $0,001\frac{\textrm{kg}}{\textrm{m}^3}$ als unsicher angenommen.
-\paragraph{Länge der Kapillare} Die Kapillare ist an einem Ende schräg angeschnitten. Ein eindeutiges Ende ist also nicht direkt zu bestimmen. Für unsere Auswertung wurde der Mittelpunkt der Schräge für die Längenbestimmung verwendet und die Unsicherheit wie in Abbildung 7 dargestellt, bestimmt.
+\paragraph{Länge der Kapillare} Die Kapillare ist an einem Ende schräg angeschnitten. Ein eindeutiges Ende ist also nicht direkt zu bestimmen. Für unsere Auswertung wurde der Mittelpunkt der Schräge, berechnet mit dem Arithmetischen Mittel der Längen zur Ober- und Unterkante der Öffnung, verwendet und die Unsicherheit wie in Abbildung 7 dargestellt, bestimmt.
 \begin{figure}[H]
 \centering
 \includegraphics[width=110pt]{KapillareMasse.png}
@@ -193,7 +207,13 @@ Unsicherheiten für Zeit, Höhe und Masse wurden wie in Abschnitt 2.3 erläutert
 \label{fig:length_eight_mouse}
 \end{figure}
 \noindent
-Für alle fortgepflanzten Fehler wurden die Gleichungen aus Abschnitt 4.1 und 4.2 des ABW-Scriptes \cite{2} verwendet.
+\paragraph{Radius der Kapillare}
+Wie bereits im vorhergehenden Abschnitt angesprochen, können kleine Messfehler des Kapillarradius zu großen Abweichungen der Ergebnisse führen, da der Radius in der vierten Potenz in die Viskosität einfließt.
+Die geschätzte Unsicherheit beträgt 1,5 Sktl $\widehat{=}$ 15,9µm.
+\paragraph{Strömungswiderstand}
+Die Unsicherheiten der Ausgleichsgeraden betragen, wie im vorherigen Abschnitt erwähnt, 1,8 $\cdot 10^9 \ \frac{\textrm{Pa}\cdot \textrm{s}}{\textrm{m}^3}$ für Kanüle 1 und 8,3 $\cdot 10^9 \ \frac{\textrm{Pa}\cdot \textrm{s}}{\textrm{m}^3}$ für Kanüle 2.
+\paragraph{Berechnungsmethoden}
+Für alle fortgepflanzten Fehler wurden die Gleichungen aus Abschnitt 4.1 und 4.2 des ABW-Skriptes \cite{2} verwendet.
 \section{Zusatzfragen}
 \subsection{Fallschirmspringer}
 Zur Vereinfachung nehmen wir an der Mensch sei ein Zylinder
@@ -214,7 +234,7 @@ im Grunde schon im Bereich turbulenter Strömung.
 \section{Literaturverzeichnis}
 \begin{thebibliography}{9}
 \bibitem{1}
-TUM Fakultät für Physik. \emph{Viskosität (VIS)}. 12.07.2022. \\
+TUM Fakultät für Physik. \emph{Viskosität (VIS)} (12.07.2022). \\
 \textbf{URL:} \url{https://www.ph.tum.de/academics/org/labs/ap/ap1/VIS.pdf}
 \bibitem{2}
 TUM Fakultät für Physik. \emph{ABW-Skript} (12.07.2022). \\
@@ -245,4 +265,6 @@ H. Sigloh. \emph{Technische Fluidmechanik, Anhang, Tabelle 6-5}, Springer Verlag
 \subsection{Laborbuch}
 \includepdf[pages=-]{Protokoll.pdf}
 \end{document}
+
+
 
