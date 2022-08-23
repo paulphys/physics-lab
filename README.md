@@ -1,5 +1,5 @@
 ## Basic Lab Courses (Anfängerpraktikum) 
-This repository contains all the material I used to conduct the basic lab courses in physics @TUM. Included are all individual lab reports, their source material and code.
+This repository contains all the material I used to conduct the basic lab courses in physics @TUM. Included are all individual lab reports, their source material and code. For some of the experiments the source code is incomplete and or missing.
 ### [Part 1 - Mechanics and Thermodynamics](https://www.ph.tum.de/academics/org/labs/ap/ap1/) (Summer 2022)
 | Experiment | Language  | Report (PDF) | Report (TeX) | Source code |
 | ------------- |  ------------- | ------------- | ------------- | ------------- |
