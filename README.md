@@ -1,5 +1,5 @@
 ## Basic Lab Courses (Anfängerpraktikum) 
-This repository contains all the material I used to conduct the basic lab courses in physics @TUM. Included are all individual lab reports, their source material and code. For some of the experiments the source code is incomplete and or missing.
+This repository contains all the material used to conduct the basic lab courses in physics @TUM. Included are the lab reports, their source material and code. For some of the experiments the source code is incomplete or missing.
 ### [Part 1 - Mechanics and Thermodynamics](https://www.ph.tum.de/academics/org/labs/ap/ap1/) (Summer 2022)
 | Experiment | Language  | Report (PDF) | Report (TeX) | Source code |
 | ------------- |  ------------- | ------------- | ------------- | ------------- |
@@ -10,6 +10,4 @@ This repository contains all the material I used to conduct the basic lab course
 | [Pohlsches Rad (POR)](POR/)  | English | [POR.pdf](/POR/por.pdf) | [POR.tex](/POR/por.tex)  | [OriginLab](POR/por.opju) & [MATLAB](POR/) (*TBD*)
 | [Viskosität (VIS)](VIS/)  | German | [VIS.pdf](/VIS/vis.pdf) | [VIS.tex](/VIS/vis.tex)  | [OriginLab](VIS/vis.opju)
 
-### [Part 2 - Thermodynamics und Electrodynamics](https://www.ph.tum.de/academics/org/labs/ap/ap2/) (Winter 2022)
 
-_upcoming_
